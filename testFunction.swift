@@ -10,6 +10,9 @@ import Foundation
 import shared
 
 public class TestKampkit {
+    public init() {
+        
+    }
     public func testPublish() -> String {
         let koinStarted =  startKoin()
         return koinStarted

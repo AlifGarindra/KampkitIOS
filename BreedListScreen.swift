@@ -62,11 +62,15 @@ class ObservableBreedModel: ObservableObject {
     }
 }
 
-struct BreedListScreen: View {
+public struct BreedListScreen: View {
     @StateObject
     var observableModel = ObservableBreedModel()
 
-    var body: some View {
+    public init(){
+        
+    }
+    
+    public var body: some View {
         BreedListContent(
             loading: observableModel.loading,
             breeds: observableModel.breeds,
